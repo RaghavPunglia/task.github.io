@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+    <html>
+        <head>
+            <title>Contact</title>
+            <link rel="stylesheet" href="style.css">
+            <style>
+     body {
+	font-family: Roboto Thin;
+	background-image: url('./images/background-contact.png');
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+			
+.width-30 {
+	width: 30%;
+}
+			
+.contact-question {
+	background-color: rgb(255, 255, 255, 0.1);
+	margin-bottom: 4px;
+	text-align: center;
+}
+
+.contact-question-title {
+	color:  #F3D000;
+	font-size: 25px;
+}
+
+.button-yellow {
+	background-color: #F3D000;
+	border: none;
+	color: #442d4d;
+	padding: 5px 25px 5px 25px;
+	transition: 0.5s;
+}
+
+.button-yellow:hover {
+	background-color: #ddd4e0;
+	border: none;
+	color: #442d4d;
+	padding: 5px 25px 5px 25px;
+}
+            </style>
+
+            <script>
+                function questionSubmit(){
+                    alert("your question is submitted");
+                }
+            </script>
+            </head>
+            <body>
+    
+    
+    <!--header-->
+    <div>
+        <a href="home.html">
+        <img src=".\images\icon.png" alt="image not loaded" height="120">
+        </a>
+    
+        <div class="navigation-links">
+            <a href="home.html" class="navigation-link">Home</a>
+            <a href="about.html" class="navigation-link">About</a>
+            <a href="contact.html" class="navigation-link">Contact</a>
+            </div>
+            
+    </div>
+    
+    
+    <!--middle-->
+<!--Question-->    
+    <div class="width-100 contact-question">
+        <span class="contact-question-title">Send us Questions:</span>
+
+        <form action="" method="get" target="self" class="yellow-text">
+           Name: <br><input type="text" name="namefield" class="width-30" required/><br>
+            Surname: <br><input type="text" name="surnamefield" class="width-30"required/><br>
+            Age: <br><input type="number" name="agefield" class="width-30"required/><br>
+            Gender:<br>
+            Male: <input type="radio" name="Gender" value="Male" checked>  Female:<input type="radio" name="Gender" value="female"><br>
+            Tel: <br><input type="tel" name="telfield" class="width-30"required/><br>
+            Question: <br>
+            <textarea name="questionfield" rows="5" class="width-30"required></textarea><br>
+
+            <input type="submit" value="submit" class="button-yellow" onclick="questionSubmit()"/>
+            <input type="reset" value="Reset" class="button-yellow"/>
+        </form>
+    </div>
+    </div>
+</div>
+
+    <!--footer-->
+    <div class="footer">
+        <a href="https://www.facebook.com/">
+            <img src=".\images\fb.png" alt="imagge not loaded" height="50" />
+        </a>
+    
+        <a href="https://www.instagram.com/">
+            <img src=".\images\ig.png" alt="image not loaded" height="50" />
+        </a>
+    
+        <a href="https://twitter.com/">
+            <img src=".\images\tw.png" alt="image not loaded" height="50" />
+        </a>
+       
+    </div>
+    
+    
+    
+            </body>
+        
+    </html>
